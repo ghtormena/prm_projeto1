@@ -1,0 +1,20 @@
+[0.417s] Invoking command in '/home/giovanna/ros2_ws/src/prm/build/prm': PYTHONPATH=/home/giovanna/ros2_ws/src/prm/build/prm/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/giovanna/ros2_ws/src/prm/install/prm/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/giovanna/ros2_ws/src/prm/build/prm/build --no-deps symlink_data
+[0.584s] running develop
+[0.684s] running egg_info
+[0.684s] writing prm.egg-info/PKG-INFO
+[0.684s] writing dependency_links to prm.egg-info/dependency_links.txt
+[0.684s] writing entry points to prm.egg-info/entry_points.txt
+[0.684s] writing requirements to prm.egg-info/requires.txt
+[0.684s] writing top-level names to prm.egg-info/top_level.txt
+[0.685s] reading manifest file 'prm.egg-info/SOURCES.txt'
+[0.686s] writing manifest file 'prm.egg-info/SOURCES.txt'
+[0.687s] running build_ext
+[0.687s] Creating /home/giovanna/ros2_ws/src/prm/install/prm/lib/python3.10/site-packages/prm.egg-link (link to .)
+[0.687s] Installing controle_robo script to /home/giovanna/ros2_ws/src/prm/install/prm/lib/prm
+[0.687s] Installing controle_robo_novo script to /home/giovanna/ros2_ws/src/prm/install/prm/lib/prm
+[0.687s] Installing controle_robo_novo_2 script to /home/giovanna/ros2_ws/src/prm/install/prm/lib/prm
+[0.687s] Installing tartaruga script to /home/giovanna/ros2_ws/src/prm/install/prm/lib/prm
+[0.687s] 
+[0.687s] Installed /home/giovanna/ros2_ws/src/prm/build/prm
+[0.687s] running symlink_data
+[0.704s] Invoked command in '/home/giovanna/ros2_ws/src/prm/build/prm' returned '0': PYTHONPATH=/home/giovanna/ros2_ws/src/prm/build/prm/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/giovanna/ros2_ws/src/prm/install/prm/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/giovanna/ros2_ws/src/prm/build/prm/build --no-deps symlink_data

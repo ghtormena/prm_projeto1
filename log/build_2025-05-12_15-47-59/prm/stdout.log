@@ -1,0 +1,46 @@
+running develop
+running egg_info
+creating prm.egg-info
+writing prm.egg-info/PKG-INFO
+writing dependency_links to prm.egg-info/dependency_links.txt
+writing entry points to prm.egg-info/entry_points.txt
+writing requirements to prm.egg-info/requires.txt
+writing top-level names to prm.egg-info/top_level.txt
+writing manifest file 'prm.egg-info/SOURCES.txt'
+reading manifest file 'prm.egg-info/SOURCES.txt'
+writing manifest file 'prm.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/giovanna/ros2_ws/src/prm/install/prm/lib/python3.10/site-packages/prm.egg-link (link to .)
+Installing controle_robo script to /home/giovanna/ros2_ws/src/prm/install/prm/lib/prm
+Installing controle_robo_novo script to /home/giovanna/ros2_ws/src/prm/install/prm/lib/prm
+Installing controle_robo_novo_2 script to /home/giovanna/ros2_ws/src/prm/install/prm/lib/prm
+Installing tartaruga script to /home/giovanna/ros2_ws/src/prm/install/prm/lib/prm
+
+Installed /home/giovanna/ros2_ws/src/prm/build/prm
+running symlink_data
+creating /home/giovanna/ros2_ws/src/prm/install/prm/share/ament_index
+creating /home/giovanna/ros2_ws/src/prm/install/prm/share/ament_index/resource_index
+creating /home/giovanna/ros2_ws/src/prm/install/prm/share/ament_index/resource_index/packages
+symbolically linking /home/giovanna/ros2_ws/src/prm/build/prm/resource/prm -> /home/giovanna/ros2_ws/src/prm/install/prm/share/ament_index/resource_index/packages
+symbolically linking /home/giovanna/ros2_ws/src/prm/build/prm/package.xml -> /home/giovanna/ros2_ws/src/prm/install/prm/share/prm
+creating /home/giovanna/ros2_ws/src/prm/install/prm/share/prm/launch
+symbolically linking /home/giovanna/ros2_ws/src/prm/build/prm/launch/carrega_robo.launch.py -> /home/giovanna/ros2_ws/src/prm/install/prm/share/prm/launch
+symbolically linking /home/giovanna/ros2_ws/src/prm/build/prm/launch/editar_mundo.launch.py -> /home/giovanna/ros2_ws/src/prm/install/prm/share/prm/launch
+symbolically linking /home/giovanna/ros2_ws/src/prm/build/prm/launch/turtlesim_mimic.launch.py -> /home/giovanna/ros2_ws/src/prm/install/prm/share/prm/launch
+symbolically linking /home/giovanna/ros2_ws/src/prm/build/prm/launch/inicia_simulacao.launch.py -> /home/giovanna/ros2_ws/src/prm/install/prm/share/prm/launch
+creating /home/giovanna/ros2_ws/src/prm/install/prm/share/prm/description
+symbolically linking /home/giovanna/ros2_ws/src/prm/build/prm/description/robot.urdf.xacro -> /home/giovanna/ros2_ws/src/prm/install/prm/share/prm/description
+creating /home/giovanna/ros2_ws/src/prm/install/prm/share/prm/rviz
+symbolically linking /home/giovanna/ros2_ws/src/prm/build/prm/rviz/rviz_config.rviz -> /home/giovanna/ros2_ws/src/prm/install/prm/share/prm/rviz
+creating /home/giovanna/ros2_ws/src/prm/install/prm/share/prm/config
+symbolically linking /home/giovanna/ros2_ws/src/prm/build/prm/config/diff_drive_controller_velocity.yaml -> /home/giovanna/ros2_ws/src/prm/install/prm/share/prm/config
+creating /home/giovanna/ros2_ws/src/prm/install/prm/share/prm/world
+symbolically linking /home/giovanna/ros2_ws/src/prm/build/prm/world/arena.sdf -> /home/giovanna/ros2_ws/src/prm/install/prm/share/prm/world
+symbolically linking /home/giovanna/ros2_ws/src/prm/build/prm/world/empty.sdf -> /home/giovanna/ros2_ws/src/prm/install/prm/share/prm/world
+creating /home/giovanna/ros2_ws/src/prm/install/prm/share/prm/models
+creating /home/giovanna/ros2_ws/src/prm/install/prm/share/prm/models/TurtlebotArena
+symbolically linking /home/giovanna/ros2_ws/src/prm/build/prm/models/TurtlebotArena/model.sdf -> /home/giovanna/ros2_ws/src/prm/install/prm/share/prm/models/TurtlebotArena
+symbolically linking /home/giovanna/ros2_ws/src/prm/build/prm/models/TurtlebotArena/model.config -> /home/giovanna/ros2_ws/src/prm/install/prm/share/prm/models/TurtlebotArena
+creating /home/giovanna/ros2_ws/src/prm/install/prm/share/prm/models/TurtlebotArena/meshes
+symbolically linking /home/giovanna/ros2_ws/src/prm/build/prm/models/TurtlebotArena/meshes/hexagon.dae -> /home/giovanna/ros2_ws/src/prm/install/prm/share/prm/models/TurtlebotArena/meshes
+symbolically linking /home/giovanna/ros2_ws/src/prm/build/prm/models/TurtlebotArena/meshes/wall.dae -> /home/giovanna/ros2_ws/src/prm/install/prm/share/prm/models/TurtlebotArena/meshes

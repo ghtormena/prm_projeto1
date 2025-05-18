@@ -1,0 +1,48 @@
+[0.396s] Invoking command in '/home/giovanna/ros2_ws/src/prm/build/prm': PYTHONPATH=/home/giovanna/ros2_ws/src/prm/build/prm/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/giovanna/ros2_ws/src/prm/install/prm/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/giovanna/ros2_ws/src/prm/build/prm/build --no-deps symlink_data
+[0.566s] running develop
+[0.670s] running egg_info
+[0.670s] creating prm.egg-info
+[0.670s] writing prm.egg-info/PKG-INFO
+[0.670s] writing dependency_links to prm.egg-info/dependency_links.txt
+[0.670s] writing entry points to prm.egg-info/entry_points.txt
+[0.670s] writing requirements to prm.egg-info/requires.txt
+[0.670s] writing top-level names to prm.egg-info/top_level.txt
+[0.670s] writing manifest file 'prm.egg-info/SOURCES.txt'
+[0.671s] reading manifest file 'prm.egg-info/SOURCES.txt'
+[0.671s] writing manifest file 'prm.egg-info/SOURCES.txt'
+[0.672s] running build_ext
+[0.672s] Creating /home/giovanna/ros2_ws/src/prm/install/prm/lib/python3.10/site-packages/prm.egg-link (link to .)
+[0.673s] Installing controle_robo script to /home/giovanna/ros2_ws/src/prm/install/prm/lib/prm
+[0.673s] Installing controle_robo_novo script to /home/giovanna/ros2_ws/src/prm/install/prm/lib/prm
+[0.673s] Installing controle_robo_novo_2 script to /home/giovanna/ros2_ws/src/prm/install/prm/lib/prm
+[0.673s] Installing tartaruga script to /home/giovanna/ros2_ws/src/prm/install/prm/lib/prm
+[0.673s] 
+[0.673s] Installed /home/giovanna/ros2_ws/src/prm/build/prm
+[0.673s] running symlink_data
+[0.673s] creating /home/giovanna/ros2_ws/src/prm/install/prm/share/ament_index
+[0.673s] creating /home/giovanna/ros2_ws/src/prm/install/prm/share/ament_index/resource_index
+[0.673s] creating /home/giovanna/ros2_ws/src/prm/install/prm/share/ament_index/resource_index/packages
+[0.673s] symbolically linking /home/giovanna/ros2_ws/src/prm/build/prm/resource/prm -> /home/giovanna/ros2_ws/src/prm/install/prm/share/ament_index/resource_index/packages
+[0.673s] symbolically linking /home/giovanna/ros2_ws/src/prm/build/prm/package.xml -> /home/giovanna/ros2_ws/src/prm/install/prm/share/prm
+[0.673s] creating /home/giovanna/ros2_ws/src/prm/install/prm/share/prm/launch
+[0.673s] symbolically linking /home/giovanna/ros2_ws/src/prm/build/prm/launch/carrega_robo.launch.py -> /home/giovanna/ros2_ws/src/prm/install/prm/share/prm/launch
+[0.673s] symbolically linking /home/giovanna/ros2_ws/src/prm/build/prm/launch/editar_mundo.launch.py -> /home/giovanna/ros2_ws/src/prm/install/prm/share/prm/launch
+[0.673s] symbolically linking /home/giovanna/ros2_ws/src/prm/build/prm/launch/turtlesim_mimic.launch.py -> /home/giovanna/ros2_ws/src/prm/install/prm/share/prm/launch
+[0.673s] symbolically linking /home/giovanna/ros2_ws/src/prm/build/prm/launch/inicia_simulacao.launch.py -> /home/giovanna/ros2_ws/src/prm/install/prm/share/prm/launch
+[0.674s] creating /home/giovanna/ros2_ws/src/prm/install/prm/share/prm/description
+[0.674s] symbolically linking /home/giovanna/ros2_ws/src/prm/build/prm/description/robot.urdf.xacro -> /home/giovanna/ros2_ws/src/prm/install/prm/share/prm/description
+[0.674s] creating /home/giovanna/ros2_ws/src/prm/install/prm/share/prm/rviz
+[0.674s] symbolically linking /home/giovanna/ros2_ws/src/prm/build/prm/rviz/rviz_config.rviz -> /home/giovanna/ros2_ws/src/prm/install/prm/share/prm/rviz
+[0.674s] creating /home/giovanna/ros2_ws/src/prm/install/prm/share/prm/config
+[0.674s] symbolically linking /home/giovanna/ros2_ws/src/prm/build/prm/config/diff_drive_controller_velocity.yaml -> /home/giovanna/ros2_ws/src/prm/install/prm/share/prm/config
+[0.674s] creating /home/giovanna/ros2_ws/src/prm/install/prm/share/prm/world
+[0.674s] symbolically linking /home/giovanna/ros2_ws/src/prm/build/prm/world/arena.sdf -> /home/giovanna/ros2_ws/src/prm/install/prm/share/prm/world
+[0.674s] symbolically linking /home/giovanna/ros2_ws/src/prm/build/prm/world/empty.sdf -> /home/giovanna/ros2_ws/src/prm/install/prm/share/prm/world
+[0.674s] creating /home/giovanna/ros2_ws/src/prm/install/prm/share/prm/models
+[0.674s] creating /home/giovanna/ros2_ws/src/prm/install/prm/share/prm/models/TurtlebotArena
+[0.674s] symbolically linking /home/giovanna/ros2_ws/src/prm/build/prm/models/TurtlebotArena/model.sdf -> /home/giovanna/ros2_ws/src/prm/install/prm/share/prm/models/TurtlebotArena
+[0.674s] symbolically linking /home/giovanna/ros2_ws/src/prm/build/prm/models/TurtlebotArena/model.config -> /home/giovanna/ros2_ws/src/prm/install/prm/share/prm/models/TurtlebotArena
+[0.674s] creating /home/giovanna/ros2_ws/src/prm/install/prm/share/prm/models/TurtlebotArena/meshes
+[0.674s] symbolically linking /home/giovanna/ros2_ws/src/prm/build/prm/models/TurtlebotArena/meshes/hexagon.dae -> /home/giovanna/ros2_ws/src/prm/install/prm/share/prm/models/TurtlebotArena/meshes
+[0.674s] symbolically linking /home/giovanna/ros2_ws/src/prm/build/prm/models/TurtlebotArena/meshes/wall.dae -> /home/giovanna/ros2_ws/src/prm/install/prm/share/prm/models/TurtlebotArena/meshes
+[0.690s] Invoked command in '/home/giovanna/ros2_ws/src/prm/build/prm' returned '0': PYTHONPATH=/home/giovanna/ros2_ws/src/prm/build/prm/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/giovanna/ros2_ws/src/prm/install/prm/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/giovanna/ros2_ws/src/prm/build/prm/build --no-deps symlink_data
