@@ -59,7 +59,8 @@ setup(
             'controle_robo = prm.controle_robo:main',
             'controle_robo_novo = prm.controle_robo_novo:main',
             'controle_robo_novo_2 = prm.controle_robo_novo_2:main',
-            'controle_robo_novo_3 = prm.controle_robo_novo_3:main'
+            'controle_robo_novo_3 = prm.controle_robo_novo_3:main',
+            'controle_robo_novo_4 = prm.controle_robo_novo_4:main'
         ],
     },
 )

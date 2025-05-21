@@ -1,0 +1,21 @@
+[0.954s] Invoking command in '/home/giovanna/ros2_ws/src/prm/build/prm': PYTHONPATH=/home/giovanna/ros2_ws/src/prm/build/prm/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/giovanna/ros2_ws/src/prm/install/prm/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/giovanna/ros2_ws/src/prm/build/prm/build --no-deps symlink_data
+[1.294s] running develop
+[1.508s] running egg_info
+[1.508s] writing prm.egg-info/PKG-INFO
+[1.508s] writing dependency_links to prm.egg-info/dependency_links.txt
+[1.508s] writing entry points to prm.egg-info/entry_points.txt
+[1.508s] writing requirements to prm.egg-info/requires.txt
+[1.508s] writing top-level names to prm.egg-info/top_level.txt
+[1.511s] reading manifest file 'prm.egg-info/SOURCES.txt'
+[1.512s] writing manifest file 'prm.egg-info/SOURCES.txt'
+[1.514s] running build_ext
+[1.514s] Creating /home/giovanna/ros2_ws/src/prm/install/prm/lib/python3.10/site-packages/prm.egg-link (link to .)
+[1.515s] Installing controle_robo script to /home/giovanna/ros2_ws/src/prm/install/prm/lib/prm
+[1.515s] Installing controle_robo_novo script to /home/giovanna/ros2_ws/src/prm/install/prm/lib/prm
+[1.515s] Installing controle_robo_novo_2 script to /home/giovanna/ros2_ws/src/prm/install/prm/lib/prm
+[1.515s] Installing controle_robo_novo_3 script to /home/giovanna/ros2_ws/src/prm/install/prm/lib/prm
+[1.515s] Installing tartaruga script to /home/giovanna/ros2_ws/src/prm/install/prm/lib/prm
+[1.516s] 
+[1.516s] Installed /home/giovanna/ros2_ws/src/prm/build/prm
+[1.516s] running symlink_data
+[1.555s] Invoked command in '/home/giovanna/ros2_ws/src/prm/build/prm' returned '0': PYTHONPATH=/home/giovanna/ros2_ws/src/prm/build/prm/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/giovanna/ros2_ws/src/prm/install/prm/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/giovanna/ros2_ws/src/prm/build/prm/build --no-deps symlink_data

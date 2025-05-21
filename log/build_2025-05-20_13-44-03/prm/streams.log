@@ -1,0 +1,10 @@
+[2.126s] Invoking command in '/home/giovanna/ros2_ws/src/prm/build/prm': PYTHONPATH=/home/giovanna/ros2_ws/src/prm/build/prm/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/giovanna/ros2_ws/src/prm/install/prm/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/giovanna/ros2_ws/src/prm/build/prm/build --no-deps symlink_data
+[2.641s] /home/giovanna/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:289: UserWarning: Unknown distribution option: 'tests_require'
+[2.641s]   warnings.warn(msg)
+[2.794s] usage: setup.py [global_opts] cmd1 [cmd1_opts] [cmd2 [cmd2_opts] ...]
+[2.794s]    or: setup.py --help [cmd1 cmd2 ...]
+[2.794s]    or: setup.py --help-commands
+[2.794s]    or: setup.py cmd --help
+[2.795s] 
+[2.795s] error: option --editable not recognized
+[2.864s] Invoked command in '/home/giovanna/ros2_ws/src/prm/build/prm' returned '1': PYTHONPATH=/home/giovanna/ros2_ws/src/prm/build/prm/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/giovanna/ros2_ws/src/prm/install/prm/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/giovanna/ros2_ws/src/prm/build/prm/build --no-deps symlink_data

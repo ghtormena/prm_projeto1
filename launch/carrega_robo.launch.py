@@ -152,7 +152,7 @@ def generate_launch_description():
         executable="parameter_bridge",
         name="ros_gz_bridge_prm_robot",
         arguments=[
-            "/scan@sensor_msgs/msg/LaserScan[ignition.msgs.LaserScan",
+            "/scan@sensor_msgs/msg/LaserScan@ignition.msgs.LaserScan",
             "/imu@sensor_msgs/msg/Imu[ignition.msgs.IMU",
             "/robot_cam@sensor_msgs/msg/Image@ignition.msgs.Image",
             "/camera_info@sensor_msgs/msg/CameraInfo@ignition.msgs.CameraInfo",

@@ -2,10 +2,12 @@ package.xml
 setup.cfg
 setup.py
 config/diff_drive_controller_velocity.yaml
+config/nav2_params.yaml
 description/robot.urdf.xacro
 launch/carrega_robo.launch.py
 launch/editar_mundo.launch.py
 launch/inicia_simulacao.launch.py
+launch/nav_launch.py
 launch/turtlesim_mimic.launch.py
 models/TurtlebotArena/model.config
 models/TurtlebotArena/model.sdf
@@ -15,6 +17,7 @@ prm/__init__.py
 prm/controle_robo.py
 prm/controle_robo_novo.py
 prm/controle_robo_novo_2.py
+prm/controle_robo_novo_3.py
 prm/controle_tartaruga.py
 prm.egg-info/PKG-INFO
 prm.egg-info/SOURCES.txt

@@ -1,0 +1,19 @@
+running develop
+running egg_info
+writing prm.egg-info/PKG-INFO
+writing dependency_links to prm.egg-info/dependency_links.txt
+writing entry points to prm.egg-info/entry_points.txt
+writing requirements to prm.egg-info/requires.txt
+writing top-level names to prm.egg-info/top_level.txt
+reading manifest file 'prm.egg-info/SOURCES.txt'
+writing manifest file 'prm.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/giovanna/ros2_ws/src/prm/install/prm/lib/python3.10/site-packages/prm.egg-link (link to .)
+Installing controle_robo script to /home/giovanna/ros2_ws/src/prm/install/prm/lib/prm
+Installing controle_robo_novo script to /home/giovanna/ros2_ws/src/prm/install/prm/lib/prm
+Installing controle_robo_novo_2 script to /home/giovanna/ros2_ws/src/prm/install/prm/lib/prm
+Installing controle_robo_novo_3 script to /home/giovanna/ros2_ws/src/prm/install/prm/lib/prm
+Installing tartaruga script to /home/giovanna/ros2_ws/src/prm/install/prm/lib/prm
+
+Installed /home/giovanna/ros2_ws/src/prm/build/prm
+running symlink_data
