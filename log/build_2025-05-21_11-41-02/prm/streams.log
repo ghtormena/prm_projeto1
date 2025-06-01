@@ -1,0 +1,10 @@
+[0.879s] Invoking command in '/home/giovanna/ros2_ws/src/prm/build/prm': PYTHONPATH=/home/giovanna/ros2_ws/src/prm/build/prm/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/giovanna/ros2_ws/src/prm/install/prm/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/giovanna/ros2_ws/src/prm/build/prm/build
+[1.089s] /home/giovanna/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:289: UserWarning: Unknown distribution option: 'tests_require'
+[1.089s]   warnings.warn(msg)
+[1.155s] usage: setup.py [global_opts] cmd1 [cmd1_opts] [cmd2 [cmd2_opts] ...]
+[1.155s]    or: setup.py --help [cmd1 cmd2 ...]
+[1.155s]    or: setup.py --help-commands
+[1.155s]    or: setup.py cmd --help
+[1.155s] 
+[1.155s] error: option --uninstall not recognized
+[1.180s] Invoked command in '/home/giovanna/ros2_ws/src/prm/build/prm' returned '1': PYTHONPATH=/home/giovanna/ros2_ws/src/prm/build/prm/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/giovanna/ros2_ws/src/prm/install/prm/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/giovanna/ros2_ws/src/prm/build/prm/build

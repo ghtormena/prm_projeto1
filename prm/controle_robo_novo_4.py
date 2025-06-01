@@ -31,6 +31,7 @@ class ControleRobo(Node):
         self.largura_img = None
         self.distancia_frontal = float('inf')
         self.chegou_na_bandeira = False
+        self.area_bandeira = 0
 
         # Para evitar troca rápida de direção
         self.direcao_obstaculo = None
@@ -48,25 +49,25 @@ class ControleRobo(Node):
         indices_esq_frente = list(range(315, 360))
         indices_dir_frente = list(range(0, 46))
 
-        dist_esq = [msg.ranges[i] for i in indices_esq_frente if not np.isnan(msg.ranges[i])]
-        dist_dir = [msg.ranges[i] for i in indices_dir_frente if not np.isnan(msg.ranges[i])]
+        dist_esq = [msg.ranges[i] for i in indices_esq_frente if not np.isnan(msg.ranges[i])] #coloca as distâncias à esquerda em um vetor
+        dist_dir = [msg.ranges[i] for i in indices_dir_frente if not np.isnan(msg.ranges[i])] #coloca as distâncias à direita em um vetor
 
-        min_esq = min(dist_esq) if dist_esq else float('inf')
-        min_dir = min(dist_dir) if dist_dir else float('inf')
+        min_esq = min(dist_esq) if dist_esq else float('inf') # minima distância à esquerda
+        min_dir = min(dist_dir) if dist_dir else float('inf') # mínima distância à direita
         media_esq = np.mean(dist_esq) if dist_esq else 0
         media_dir = np.mean(dist_dir) if dist_dir else 0
 
-        todos_frontal = dist_esq + dist_dir
-        self.distancia_frontal = min(todos_frontal) if todos_frontal else float('inf')
+        todos_frontal = dist_esq + dist_dir #distancia total no leque determinado
+        self.distancia_frontal = min(todos_frontal) if todos_frontal else float('inf') #minima distancia em um leque de 180
 
-        if self.distancia_frontal < 1:
+        if self.distancia_frontal < 0.8: #se algum ponto a 180 esta a menos de 1m
             self.obstaculo_a_frente = True
 
             agora = self.get_clock().now()
             tempo_desde_ultima_troca = (agora - self.timestamp_ultima_direcao).nanoseconds / 1e9
 
             if (
-                self.direcao_obstaculo is None or
+                self.direcao_obstaculo is None or 
                 tempo_desde_ultima_troca > 2.0 or
                 abs(media_esq - media_dir) > 0.2
             ):
@@ -96,10 +97,17 @@ class ControleRobo(Node):
         if contours:
             maior = max(contours, key=cv2.contourArea)
             M = cv2.moments(maior)
+            area = cv2.contourArea(maior)
+
             if M["m00"] > 0:
                 self.bandeira_x = int(M["m10"] / M["m00"])
             else:
                 self.bandeira_x = None
+
+            self.area_bandeira = area  # 👈 salva a área aqui
+        else:
+            self.bandeira_x = None
+            self.area_bandeira = 0  # nada visível
 
         if self.bandeira_x is not None:
             self.bandeira_ja_foi_vista = True
@@ -117,13 +125,17 @@ class ControleRobo(Node):
     def move_robot(self):
         twist = Twist()
 
-        if not self.chegou_na_bandeira and self.bandeira_x is not None and self.largura_img:
+        if (not self.chegou_na_bandeira
+            and self.bandeira_x is not None
+            and self.largura_img
+            and self.area_bandeira > 800  # 👈 depende da sua câmera e distância
+        ):
             centro = self.largura_img // 2
             erro = abs(self.bandeira_x - centro)
 
-            if erro < 30 and self.distancia_frontal < 0.45:
+            if erro < 40:
                 self.chegou_na_bandeira = True
-                self.get_logger().info("🏁 Missão cumprida! Chegamos na bandeira.")
+                self.get_logger().info(f"🏁 Missão cumprida! Bandeira centralizada e próxima (área={self.area_bandeira:.0f})")
 
         if self.chegou_na_bandeira:
             twist = Twist()
@@ -139,26 +151,26 @@ class ControleRobo(Node):
                 twist.angular.z = -0.001 * erro
                 self.get_logger().info("Movendo em direção à bandeira 🎯")
             else:
-                if self.distancia_frontal < 0.2:
-                    twist.linear.x = 0.05
+                if self.distancia_frontal < 0.3:
+                    twist.linear.x = 0.0
                     twist.angular.z = 0.3 if self.girar_para_esquerda else -0.3
                     self.get_logger().info("⚠️ Objeto MUITO próximo! Girando parado")
                 else:
-                    twist.linear.x = 0.1
-                    twist.angular.z = 0.2 if self.girar_para_esquerda else -0.2
+                    twist.linear.x = 0.15
+                    twist.angular.z = 0.3 if self.girar_para_esquerda else -0.3
                     self.get_logger().info("Desviando de obstáculo durante perseguição 🚧")
         else:
             if not self.obstaculo_a_frente:
-                twist.linear.x = 0.1
+                twist.linear.x = 0.15
                 self.get_logger().info("Movendo reto 🚶")
             else:
                 if self.distancia_frontal < 0.2:
                     twist.linear.x = 0.0
-                    twist.angular.z = 0.2 if self.girar_para_esquerda else -0.2
+                    twist.angular.z = 0.3 if self.girar_para_esquerda else -0.3
                     self.get_logger().info("⚠️ Objeto MUITO próximo! Girando parado (sem bandeira)")
                 else:
-                    twist.linear.x = 0.1
-                    twist.angular.z = 0.2 if self.girar_para_esquerda else -0.2
+                    twist.linear.x = 0.15
+                    twist.angular.z = 0.3 if self.girar_para_esquerda else -0.3
                     self.get_logger().info("Desviando de obstáculo sem bandeira 👀")
 
         # ---------- MODO BUSCA ----------
@@ -167,7 +179,7 @@ class ControleRobo(Node):
 
         if self.bandeira_x is None and not self.obstaculo_a_frente and self.bandeira_ja_foi_vista and tempo_sem_bandeira > 2.0:
             twist.linear.x = 0.0
-            twist.angular.z = 0.3  # gira parado procurando a bandeira
+            twist.angular.z = 0.5  # gira parado procurando a bandeira
             self.get_logger().info("🔍 Modo busca: girando pra procurar a bandeira")
 
         self.cmd_vel_pub.publish(twist)
